@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopKart - My Profile</title>
+ <link rel="icon" type="image/x-icon" href="image/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+<div class="logo"><img src="image/shopkartn.png"  width="100%" height="80px" > </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="cart.html">
+            Cart
+        </a>
+
+        <a href="orders.html">
+            My Orders
+        </a>
+
+        <a href="profile.html" class="active">
+            My Profile
+        </a>
+
+        <a href="#" id="loginLink">
+            Login
+        </a>
+
+        <a href="#" id="logoutLink" style="display: none;">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="profile-page">
+
+    <h1>
+        My Profile
+    </h1>
+
+    <div class="profile-card">
+
+        <div class="profile-avatar">
+            👤
+        </div>
+
+        <h2 id="profileName">
+            Loading...
+        </h2>
+
+        <p id="profileEmail">
+            Loading...
+        </p>
+
+        <button id="editProfileBtn">
+            Edit Profile
+        </button>
+
+<div id="editProfileForm" class="edit-profile-form">
+
+    <label for="editName">
+        Name
+    </label>
+
+    <input
+        type="text"
+        id="editName"
+        placeholder="Enter your name"
+    >
+
+    <label for="editEmail">
+        Email
+    </label>
+
+    <input
+        type="email"
+        id="editEmail"
+        placeholder="Enter your email"
+    >
+
+    <div class="edit-profile-buttons">
+
+        <button id="saveProfileBtn">
+            Save Changes
+        </button>
+
+        <button id="cancelProfileBtn">
+            Cancel
+        </button>
+
+    </div>
+
+</div>
+
+    </div>
+
+</main>
+
+
+<script src="js/auth.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>

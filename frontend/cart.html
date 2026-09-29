@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopKart - Cart</title>
+<link rel="icon" type="image/x-icon" href="image/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+     <div class="logo"><img src="image/shopkartn.png"  width="100%" height="80px" > </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html"  class="active">
+    Cart <span id="cartCount">0</span>
+</a>
+<a href="profile.html" id="profileLink" style="display: none;">
+    My Profile
+</a>
+        <a href="orders.html">My Orders</a>
+        <a href="#" id="loginLink">Login</a>
+<a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+
+</header>
+
+
+<main class="cart-page">
+
+    <h1>Cart Items</h1>
+
+    <div id="cartContainer" >
+        <!-- Cart products will appear here -->
+    </div>
+
+<div id="cartTotal">
+    <!-- Total will appear here -->
+
+    <button onclick="goToCheckout()" class="checkout-btn">
+        Proceed to Checkout
+    </button>
+</div>
+
+</main>
+
+
+<script src="js/cart.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

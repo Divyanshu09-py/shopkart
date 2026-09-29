@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopKart - Products</title>
+    <link rel="icon" type="image/x-icon" href="image/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo"><img src="image/shopkartn.png"  width="100%" height="80px" > </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="orders.html">My Orders</a>
+        <a href="profile.html" id="profileLink" style="display: none;">
+    My Profile
+</a>
+        <a href="#" id="loginLink">Login</a>
+<a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+</header>
+
+<main class="products-page">
+
+    <h1>Our Products</h1>
+
+<p class="products-subtitle">
+    Explore our latest products
+</p>
+
+<div class="product-filters">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+    >
+
+    <select id="categoryFilter">
+        <option value="all">--Select Categories--</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Gaming">Gaming</option>
+    </select>
+
+    <select id="sortProducts">
+        <option value="default">--Sort By--</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="name-az">Name: A to Z</option>
+        <option value="name-za">Name: Z to A</option>
+    </select>
+
+</div>
+
+</div>
+
+    <div id="productsContainer" class="products-container">
+        <!-- Products will come from backend -->
+    </div>
+
+</main>
+
+<script src="js/products.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

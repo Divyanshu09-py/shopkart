@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopKart - E-Commerce</title>
+    <link rel="icon" type="image/x-icon" href="image/icon.png" width="80px" height:90px>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><img src="image/shopkartn.png"  width="100%" height="80px" > </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="orders.html">My Orders</a>
+            <a href="profile.html" id="profileLink" style="display: none;">
+    My Profile
+</a>
+            <a href="#" id="loginLink">Login</a>
+<a href="#" id="logoutLink" style="display: none;">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tagline">WELCOME TO SHOPKART</p>
+                <h1>Everything you need,<br><span>in one place.</span></h1>
+                <p class="description">
+                    Discover quality products at great prices.
+                    Your simple and secure online shopping experience starts here.
+                </p>
+                <button id="shopNowBtn">Shop Now</button>
+            </div>
+        </section>
+
+       <section class="categories">
+    <h2>Shop by Category</h2>
+    <p class="category-subtitle">
+        Explore products from our popular categories
+    </p>
+
+    <div class="category-container">
+
+        <div class="category-card" onclick="shopCategory('Electronics')">
+            <div class="category-icon">📱</div>
+            <h3>Electronics</h3>
+            <p>Smartphones, laptops & more</p>
+            <span>Explore →</span>
+        </div>
+
+        <div class="category-card" onclick="shopCategory('Accessories')">
+            <div class="category-icon">🎧</div>
+            <h3>Accessories</h3>
+            <p>Headphones, speakers & more</p>
+            <span>Explore →</span>
+        </div>
+
+        <div class="category-card" onclick="shopCategory('Gaming')">
+            <div class="category-icon">🎮</div>
+            <h3>Gaming</h3>
+            <p>Gaming mouse, keyboards & more</p>
+            <span>Explore →</span>
+        </div>
+
+    </div>
+</section>
+<section class="featured-products">
+
+    <h2>Featured Products</h2>
+
+    <p class="featured-subtitle">
+        Discover some of our popular products
+    </p>
+
+    <div id="featuredProductsContainer" class="featured-products-container">
+        <p>Loading products...</p>
+    </div>
+
+    <button id="viewAllProductsBtn">
+        View All Products
+    </button>
+
+</section>
+    </main>
+
+    <footer>
+        <p>© 2026 ShopKart. All rights reserved.</p>
+<br>
+        Contact us:<br>
+        <hr>
+        <span> Call us on : +91 9523214374</span><br>
+        <span>Email : tidivyanshuwari569@gmail.com</span>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
