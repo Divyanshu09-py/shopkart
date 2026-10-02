@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopKart - Product Details</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+<div class="logo"><img src="image/shopkartn.png"  width="100%" height="80px" > </div>
+    
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="orders.html">My Orders</a>
+<a href="profile.html" id="profileLink" style="display: none;">
+    My Profile
+</a>
+        <a href="#" id="loginLink">Login</a>
+
+        <a href="#" id="logoutLink" style="display: none;">
+            Logout
+        </a>
+    </nav>
+
+</header>
+
+
+<main class="product-details-page">
+
+   <div id="productDetails">
+    <p>Loading product...</p>
+</div>
+
+<div id="reviewsSection" class="reviews-section">
+
+    <h2>Customer Reviews</h2>
+
+    <div id="reviewsContainer">
+        <p>Loading reviews...</p>
+    </div>
+
+    <div id="reviewFormContainer">
+
+        <h3>Write a Review</h3>
+
+        <label for="reviewRating">
+            Rating
+        </label>
+
+        <select id="reviewRating">
+            <option value="5">★★★★★ - 5</option>
+            <option value="4">★★★★☆ - 4</option>
+            <option value="3">★★★☆☆ - 3</option>
+            <option value="2">★★☆☆☆ - 2</option>
+            <option value="1">★☆☆☆☆ - 1</option>
+        </select>
+
+        <label for="reviewText">
+            Your Review
+        </label>
+
+        <textarea
+            id="reviewText"
+            placeholder="Write your review..."
+        ></textarea>
+
+        <button id="submitReviewBtn">
+            Submit Review
+        </button>
+
+    </div>
+
+</div>
+
+</main>
+
+
+<script src="js/auth.js"></script>
+<script src="js/product-details.js"></script>
+
+</body>
+
+</html>
