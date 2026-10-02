@@ -103,7 +103,7 @@ saveProfileBtn.addEventListener(
 
             const response =
                 await fetch(
-                    `http://localhost:5000/api/users/${profileUser.id}`,
+                    `https://shopkart-production-5ef6.up.railway.app/api/users/${profileUser.id}`,
                     {
                         method: "PUT",
 

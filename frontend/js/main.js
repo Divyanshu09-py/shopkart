@@ -16,7 +16,7 @@ const featuredProductsContainer =
 async function loadFeaturedProducts() {
     try {
         const response = await fetch(
-            "http://localhost:5000/api/products"
+            "https://shopkart-production-5ef6.up.railway.app/api/products"
         );
 
         const products = await response.json();

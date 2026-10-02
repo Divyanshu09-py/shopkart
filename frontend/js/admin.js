@@ -17,7 +17,7 @@ if (!adminUser) {
 else {
 
     fetch(
-        `http://localhost:5000/api/users/${adminUser.id}/admin`
+        `https://shopkart-production-5ef6.up.railway.app/api/users/${adminUser.id}/admin`
     )
     .then(response => response.json())
 

@@ -37,7 +37,7 @@ async function loadOrders() {
 
         const response =
             await fetch(
-                `http://localhost:5000/api/orders/user/${orderUser.id}`
+                `https://shopkart-production-5ef6.up.railway.app/api/orders/user/${orderUser.id}`
             );
 
         const orders =
